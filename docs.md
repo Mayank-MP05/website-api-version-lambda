@@ -2,6 +2,7 @@ Api Wise Routes::
 
 Home/Landing Page -> https://api-version.mayank5pande.com/
 
+```
 / - list down all the routes along with some possible description
 
 /projects - Array of object with Project names and respective links
@@ -15,3 +16,4 @@ Home/Landing Page -> https://api-version.mayank5pande.com/
 /highlights - Highlights array of strings
 
 /social - Social Links array of objects
+```
