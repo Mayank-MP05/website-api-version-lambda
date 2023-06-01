@@ -1,0 +1,21 @@
+{
+  "name": "website-api-version-lambda",
+  "version": "1.0.0",
+  "description": "Introducing my personal portfolio API project! Built with simple rest API, these dynamic API links showcase my projects through a user-friendly interface. Get about me, highlights, easily shareable links, and seamless integration with other applications like projects. A backend dev-friendly way of showcasing my work!",
+  "main": "index.js",
+  "scripts": {
+    "zip": "zip website-api-lambda-$(date \"+%s\").zip . -r",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayank-MP05/website-api-version-lambda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mayank-MP05/website-api-version-lambda/issues"
+  },
+  "homepage": "https://github.com/Mayank-MP05/website-api-version-lambda#readme"
+}
