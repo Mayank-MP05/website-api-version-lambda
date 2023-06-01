@@ -2,17 +2,16 @@ Api Wise Routes::
 
 Home/Landing Page -> https://api-version.mayank5pande.com/
 
-/ - list down all the  routes along with some possible description
+/ - list down all the routes along with some possible description
 
-/projects
+/projects - Array of object with Project names and respective links
 
-/projects/project_slug
+/projects/project_slug - Detailed object of the project json details
 
+/performance - Array of object with performance names and respective links
 
-/performance
+/about - About me array of strings
 
-/about 
+/highlights - Highlights array of strings
 
-/highlights
-
-/social
+/social - Social Links array of objects
