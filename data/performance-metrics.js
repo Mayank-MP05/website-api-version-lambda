@@ -21,3 +21,5 @@ const performanceMetricsDB = [
         performance_metrics_url: "https://www.webpagetest.org/result/230531_AiDcXF_6J8/"
     }
 ]
+
+module.exports = performanceMetricsDB;
