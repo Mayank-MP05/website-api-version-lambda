@@ -59,6 +59,9 @@ exports.handler = async (event, context) => {
             social: SocialDB
         })
     } if (requestType === 'SINGLE_PROJECT') {
+        console.log({
+            event, context
+        });
         const filteredProject = ProjectsDB.filter(project => project.route_slug === event?.projectId);
         const singleProject = filteredProject[0];
 
