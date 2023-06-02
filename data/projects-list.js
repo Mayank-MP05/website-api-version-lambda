@@ -232,5 +232,10 @@ const ProjectsDB = [
     },
 ];
 
+const PROJECTS_BASE_URL = `https://api-version.mayank5pande.com/projects`
+const ProjectsDBTransformed = ProjectsDB.map((project) => ({
+    ...project,
+    projectDetailsUrl: `${PROJECTS_BASE_URL}/${project.route_slug}`,
+}));
 
-module.exports = ProjectsDB;
+module.exports = ProjectsDBTransformed;
