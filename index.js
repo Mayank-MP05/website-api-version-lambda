@@ -2,11 +2,12 @@ console.log('Loading function');
 
 // DOCS: Data imports
 const ProjectsDB = require('./data/projects-list.js');
-const HighlightsDB = require('./data/highlights.js');
+const HighlightsDB = require('./data/hightlights.js');
 const PerformanceDB = require('./data/performance-metrics.js');
 const AboutDB = require('./data/about-me.js');
 const SocialDB = require('./data/social-links.js');
 
+// DOCS: base handler added
 exports.handler = async (event, context) => {
     const API_BASE_URL = `https://api-version.mayank5pande.com`;
     let requestType = event?.requestType || 'HOME';
