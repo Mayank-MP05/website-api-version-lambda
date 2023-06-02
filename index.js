@@ -10,7 +10,7 @@ const SocialDB = require('./data/social-links.js');
 // DOCS: base handler added
 exports.handler = async (event, context) => {
     const API_BASE_URL = `https://api-version.mayank5pande.com`;
-    let requestType = event?.requestType || 'HOME';
+    let requestType = event?.requestType;
     const allowedRequestTypes = [
         'HOME',
         'PROJECTS',
@@ -20,7 +20,9 @@ exports.handler = async (event, context) => {
         'SOCIAL',
     ]
 
-    let responseToSend = {}
+    let responseToSend = {
+        takeMeBack: `${API_BASE_URL}`,
+    }
 
     if (requestType === 'HOME') {
         return ({
@@ -55,6 +57,14 @@ exports.handler = async (event, context) => {
         return ({
             takeMeBack: `${API_BASE_URL}`,
             social: SocialDB
+        })
+    } if (requestType === 'SINGLE_PROJECT') {
+        const filteredProject = ProjectsDB.filter(project => project.route_slug === event?.projectId);
+        const singleProject = filteredProject[0];
+
+        return ({
+            takeMeBack: `${API_BASE_URL}`,
+            projectDetails: singleProject
         })
     }
 
