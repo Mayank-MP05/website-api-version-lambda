@@ -34,7 +34,7 @@ Home/Landing Page -> https://api-version.mayank5pande.com/
 
 ### Single Project API Structure
 
-![Projects API Structure](https://github.com/Mayank-MP05/website-api-version-lambda/blob/main/docs/single-project-details.png.png?raw=true)
+![Projects API Structure](https://github.com/Mayank-MP05/website-api-version-lambda/blob/main/docs/single-project-details.png?raw=true)
 
 ### Performance Response structure
 
