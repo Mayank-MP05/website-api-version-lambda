@@ -5,4 +5,4 @@ const AboutMeDB = [
     `Hobbies - Coding, Video Editing, Memes`
 ]
 
-export default AboutMeDB
+module.exports =  AboutMeDB

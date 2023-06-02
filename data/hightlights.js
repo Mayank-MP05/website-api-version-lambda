@@ -6,4 +6,4 @@ const HighlightsDB = [
     `📜 My Tutorial based Article has been published in "JS in Plain English" Publication`
 ]
 
-export default HighlightsDB;
+module.exports =  HighlightsDB;

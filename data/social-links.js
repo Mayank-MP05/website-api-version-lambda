@@ -44,4 +44,4 @@ const SocialLinksDB = [
     // 8-10 here
 ];
 
-export default SocialLinksDB;
+module.exports =  SocialLinksDB;
